@@ -1,0 +1,12 @@
+.row.form-center
+	.col.s4.offset-s4
+		h1 Sign In
+		br
+		= form_for(:session, url: login_path) do |f|
+			.input-field
+				= f.email_field :email
+				= f.label 'Email', for: 'email'
+			.input-field
+				= f.password_field :password
+				= f.label 'Password', for: 'password'
+			= f.submit "Log in", class: 'btn-large'

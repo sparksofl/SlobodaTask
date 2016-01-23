@@ -1,8 +1,15 @@
 .row.form-center
-	.col.s6
-	h1 Sign Up
-	= form_for(@user) do |f|
-		= f.text_field :username, :placeholder => 'Username'
-		= f.email_field :email, :placeholder => 'E-mail'
-		= f.password_field :password, :placeholder => 'Password'
-		= f.submit 'Create account', :class => 'btn'
+	.col.s4.offset-s4
+		h1 Sign Up
+		br
+		= form_for(@user) do |f|
+			.input-field
+				= f.text_field :username
+				= f.label 'Username', for: 'username'
+			.input-field
+				= f.email_field :email
+				= f.label 'E-mail', for: 'email'
+			.input-field
+				= f.password_field :password
+				= f.label 'Password', for: 'password'
+			= f.submit 'Create account', class: 'btn-large'

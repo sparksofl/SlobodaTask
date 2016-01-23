@@ -46,3 +46,5 @@ group :development do
 end
 
 gem 'slim'
+gem 'seed_dump'
+gem 'paperclip'
