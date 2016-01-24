@@ -1,6 +1,7 @@
 .row
 	h1 All books
 	- @books.each do |b|
-		.col.s4.book-container
-			= image_tag b.cover.url(:medium)
-			p #{b.name} by get_author(b)
+		= link_to book_path(b) do
+			.col.s3.book-container
+				= image_tag b.cover.url(:medium)
+				p #{b.name} by get_author(b)

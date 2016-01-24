@@ -7,7 +7,7 @@
 				= f.text_field :name
 				= f.label 'Book name', for: 'name'
 			.input-field
-				= f.text_field :argument
+				= f.text_area :argument, class: 'materialize-textarea'
 				= f.label 'Brief description', for: 'argument'
 			= f.file_field :cover, class: 'image_file_input'
 			= f.submit "Create", class: 'btn'

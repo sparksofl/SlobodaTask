@@ -3,13 +3,28 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .book-container {
-	border: 1px solid #0EAC51;
+	border: 1px solid #E4E4E4;
 	text-align: center;
 	color: #333;
-	padding: 10px;
 }
 
 .book-container img {
 	width: 150px;
 	height: 250px;
+}
+
+.book-container:hover {
+	background: #e0f2f1;
+}
+
+.book-show p {
+	font-weight: 300;
+	margin-top: 100px;
+	max-height: 400px;
+	overflow: auto;
+}
+
+.book-show a:hover {
+	background-color: #01579b;
+	color: #fff;
 }
