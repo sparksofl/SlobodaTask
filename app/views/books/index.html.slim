@@ -1,0 +1,8 @@
+h1 All books
+- @books.each do |b|
+	strong Name:
+		= b.name
+	p Author
+		= User.find_by_id(b.user_id).username
+	em
+		= b.argument

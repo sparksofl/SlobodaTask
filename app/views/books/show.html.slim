@@ -1,0 +1,8 @@
+#notice 
+= notice
+strong Name: 
+= @book.name
+br
+strong Author: 
+= User.find_by_id(@book.user_id).username
+= image_tag @book.cover.url(:medium)

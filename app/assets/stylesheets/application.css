@@ -17,3 +17,7 @@
  .form-center, .form-center input {
  	text-align: center;
  }
+
+ #notice {
+  color: green;
+}
