@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root to: 'books#index'
   get 'signup' => 'users#new'
   get 'login' => 'sessions#new'
 
