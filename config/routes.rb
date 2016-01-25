@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   get 'login' => 'sessions#new'
 
   post 'login' => 'sessions#create'
-  post 'books/new' => 'books#create'
+  post 'books/new' => 'books#create'  
+  post 'books/edit' => 'books#edit'
 
   delete 'logout' => 'sessions#destroy'
   resources :users, :books, :genres, :classifications

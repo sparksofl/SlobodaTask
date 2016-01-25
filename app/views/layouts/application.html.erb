@@ -16,13 +16,13 @@
 		  <ul id="nav-mobile" class="right hide-on-med-and-down"> 
 		    <li><%= link_to "Add new book", new_book_path %></li>
 		    <li></li>
-		    <li>Loggen in as<%= current_user.username %></li> 
+		    <li>Loggen in as <%= current_user.username %></li> 
 		    <li><%= link_to "Log out", logout_path, method: "delete" %></li> 
 		  </ul> 
 		<% else %> 
-		  <ul> 
-		    <li><%= link_to "Login", 'login' %></a></li> 
-		    <li><%= link_to "Signup", 'signup' %></a></li> 
+		  <ul id="nav-mobile" class="right hide-on-med-and-down"> 
+		    <li><%= link_to "Login", '/login' %></a></li> 
+		    <li><%= link_to "Signup", '/signup' %></a></li> 
 		  </ul> 
 		<% end %>
 	</div>

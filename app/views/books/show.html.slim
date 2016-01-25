@@ -1,14 +1,19 @@
+- if flash[:notice]
+    p.flash-notice
+    	=flash[:notice]
 .row.book-show
 	.col.s4.offset-s2
 		h5 #{@book.name}
-		. By #{User.find_by_id(@book.user_id).username}
-		= link_to 'Edit', edit_book_path(@book) if current_user
+		- if @book.isdraft
+			em Draft
+		. By #{@book.get_author}
+		- @book.genres.each do |g|
+			= g.name
+			br
+		= link_to 'Edit', edit_book_path(@book) if current_user && @book.user_id == current_user.id
 		br
 		br
 		= image_tag @book.cover.url(:medium), class: 'materialboxed'
 	.col.s4
 		p #{@book.argument}
-	/ - if current_user
-	/ 	.col.s2.edit
-	/ 		= link_to 'Edit', edit_book_path(@book), class: 'btn'
 = link_to 'Back', :back, class: 'btn'

@@ -2,12 +2,18 @@
   .col.s4.offset-s4
     h3 Edit book
     br
-    = form_for :book, html: { multipart: true } do |f|
+    = form_for @book, html: { multipart: true } do |f|
       .input-field
         = f.text_field :name
         = f.label 'Book name', for: 'name'
       .input-field
         = f.text_area :argument, class: 'materialize-textarea'
         = f.label 'Brief description', for: 'argument'
-      = f.file_field :cover, class: 'image_file_input'
+      .input-field.field#cool_select
+        = select_tag 'genres[]', options_from_collection_for_select(genres, 'id', 'name'), multiple: 'multiple'
+      = f.file_field :cover, class: 'image_file_input'      
+      .input-field      
+        = f.check_box :isdraft, id: 'isdraft', class: 'filled-in'
+        = f.label 'Draft', for: 'isdraft', id: 'isdraft'
+      br
       = f.submit 'Save book', class: 'btn'

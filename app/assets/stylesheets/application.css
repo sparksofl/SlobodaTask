@@ -18,6 +18,11 @@
  	text-align: center;
  }
 
- #notice {
+ .flash-notice {
+  font-weight: 100;
   color: green;
+}
+
+select#book_classification_id {
+	display: inline-block;
 }

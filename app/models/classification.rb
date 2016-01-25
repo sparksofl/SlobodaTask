@@ -1,4 +1,4 @@
 class Classification < ActiveRecord::Base
-	belongs_to :books
-	belongs_to :genres
+	belongs_to :book
+	belongs_to :genre
 end
