@@ -7,13 +7,15 @@
 		- if @book.isdraft
 			em Draft
 		. By #{@book.get_author}
-		- @book.genres.each do |g|
-			= g.name
-			br
+		hr
+		.genres
+			- @book.genres.each do |g|
+				= g.name
+				br
 		= link_to 'Edit', edit_book_path(@book) if current_user && @book.user_id == current_user.id
 		br
 		br
 		= image_tag @book.cover.url(:medium), class: 'materialboxed'
 	.col.s4
 		p #{@book.argument}
-= link_to 'Back', :back, class: 'btn'
+= link_to 'Back', :back, class: 'btn btn-back'

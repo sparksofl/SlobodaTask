@@ -26,3 +26,20 @@
 select#book_classification_id {
 	display: inline-block;
 }
+
+.brand-logo, .all {
+	margin-left: 20px;
+}
+
+.genres {
+	color: #37474f;
+}
+
+.btn-back {
+	float: right;
+    margin-right: 30px;
+}
+
+h1 {
+	color: #666;
+}

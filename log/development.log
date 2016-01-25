@@ -40705,3 +40705,592 @@ Completed 200 OK in 52ms (Views: 49.1ms | ActiveRecord: 2.0ms)
   [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "users"
   [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
   [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" LIMIT 2 OFFSET 0
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-25 14:05:40 +0200
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.4ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered books/index.html.slim within layouts/application (4.8ms)
+Completed 200 OK in 76ms (Views: 74.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/books.self-84d33cfdbf11deef24e9ebb4518c93191c77c3e7c8801a53aa7297566709a3e7.css?body=1" for 127.0.0.1 at 2016-01-25 14:05:40 +0200
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-25 14:05:40 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-25 14:05:40 +0200
+
+
+Started GET "/assets/application.self-ac1343f989380eb691c1ec11971abd75aef9e11f89c55e1d1d5aacc103f09246.css?body=1" for 127.0.0.1 at 2016-01-25 14:05:40 +0200
+
+
+Started GET "/assets/application.self-1d5315a652aebafc3812d162e9d63e2b4190e013d21fef2ed0fbc134f939db46.js?body=1" for 127.0.0.1 at 2016-01-25 14:05:40 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-25 14:05:46 +0200
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.3ms)[0m  SELECT "books".* FROM "books"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered books/index.html.slim within layouts/application (5.7ms)
+Completed 200 OK in 100ms (Views: 98.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/books.self-84d33cfdbf11deef24e9ebb4518c93191c77c3e7c8801a53aa7297566709a3e7.css?body=1" for 127.0.0.1 at 2016-01-25 14:05:46 +0200
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-25 14:05:46 +0200
+
+
+Started GET "/assets/application.self-6857fe5a69ad33d306e0b8797d86d929d6e1cbe71c02964cdf2cf313385469f7.css?body=1" for 127.0.0.1 at 2016-01-25 14:05:46 +0200
+
+
+Started GET "/assets/application.self-1d5315a652aebafc3812d162e9d63e2b4190e013d21fef2ed0fbc134f939db46.js?body=1" for 127.0.0.1 at 2016-01-25 14:05:46 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-25 14:05:46 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-25 14:06:24 +0200
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.4ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered books/index.html.slim within layouts/application (9.3ms)
+Completed 200 OK in 82ms (Views: 80.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/books.self-84d33cfdbf11deef24e9ebb4518c93191c77c3e7c8801a53aa7297566709a3e7.css?body=1" for 127.0.0.1 at 2016-01-25 14:06:24 +0200
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-25 14:06:24 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-25 14:06:24 +0200
+
+
+Started GET "/assets/application.self-52298205ca2c8a2f02ca725c712f971882097d0e709aec5a908a436d7bbfb964.css?body=1" for 127.0.0.1 at 2016-01-25 14:06:24 +0200
+
+
+Started GET "/assets/application.self-1d5315a652aebafc3812d162e9d63e2b4190e013d21fef2ed0fbc134f939db46.js?body=1" for 127.0.0.1 at 2016-01-25 14:06:24 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-25 14:06:35 +0200
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.3ms)[0m  SELECT "books".* FROM "books"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered books/index.html.slim within layouts/application (10.7ms)
+Completed 200 OK in 84ms (Views: 82.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/books.self-84d33cfdbf11deef24e9ebb4518c93191c77c3e7c8801a53aa7297566709a3e7.css?body=1" for 127.0.0.1 at 2016-01-25 14:06:36 +0200
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-25 14:06:36 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-25 14:06:36 +0200
+
+
+Started GET "/assets/application.self-919f306d3986cd6072ff4353ba7c996923337e518ed814181c7a8cd48a753592.css?body=1" for 127.0.0.1 at 2016-01-25 14:06:36 +0200
+
+
+Started GET "/assets/application.self-1d5315a652aebafc3812d162e9d63e2b4190e013d21fef2ed0fbc134f939db46.js?body=1" for 127.0.0.1 at 2016-01-25 14:06:36 +0200
+
+
+Started GET "/books/3" for 127.0.0.1 at 2016-01-25 14:06:39 +0200
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT 1  [["id", "3"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mGenre Load (0.2ms)[0m  [1mSELECT "genres".* FROM "genres" INNER JOIN "classifications" ON "genres"."id" = "classifications"."genre_id" WHERE "classifications"."book_id" = $1[0m  [["book_id", 3]]
+  Rendered books/show.html.slim within layouts/application (3.2ms)
+Completed 200 OK in 42ms (Views: 40.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-25 14:06:41 +0200
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.4ms)[0m  SELECT "books".* FROM "books"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered books/index.html.slim within layouts/application (4.9ms)
+Completed 200 OK in 45ms (Views: 43.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/books/1" for 127.0.0.1 at 2016-01-25 14:06:42 +0200
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mGenre Load (0.2ms)[0m  [1mSELECT "genres".* FROM "genres" INNER JOIN "classifications" ON "genres"."id" = "classifications"."genre_id" WHERE "classifications"."book_id" = $1[0m  [["book_id", 1]]
+  Rendered books/show.html.slim within layouts/application (3.0ms)
+Completed 200 OK in 54ms (Views: 51.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-25 14:07:09 +0200
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.3ms)[0m  SELECT "books".* FROM "books"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered books/index.html.slim within layouts/application (4.6ms)
+Completed 200 OK in 39ms (Views: 37.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-25 14:11:35 +0200
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered books/index.html.slim within layouts/application (5.5ms)
+Completed 200 OK in 76ms (Views: 74.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/books.self-84d33cfdbf11deef24e9ebb4518c93191c77c3e7c8801a53aa7297566709a3e7.css?body=1" for 127.0.0.1 at 2016-01-25 14:11:35 +0200
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-25 14:11:35 +0200
+
+
+Started GET "/assets/application.self-1d5315a652aebafc3812d162e9d63e2b4190e013d21fef2ed0fbc134f939db46.js?body=1" for 127.0.0.1 at 2016-01-25 14:11:35 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-25 14:11:35 +0200
+
+
+Started GET "/assets/application.self-293ec305a06d56940ed9fc834e042804e81fd58a0c91192410fe61aba7f8f1a7.css?body=1" for 127.0.0.1 at 2016-01-25 14:11:35 +0200
+
+
+Started GET "/books/3" for 127.0.0.1 at 2016-01-25 14:11:37 +0200
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBook Load (0.3ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mGenre Load (0.5ms)[0m  SELECT "genres".* FROM "genres" INNER JOIN "classifications" ON "genres"."id" = "classifications"."genre_id" WHERE "classifications"."book_id" = $1  [["book_id", 3]]
+  Rendered books/show.html.slim within layouts/application (5.3ms)
+Completed 200 OK in 66ms (Views: 62.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/books/3" for 127.0.0.1 at 2016-01-25 14:11:47 +0200
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT 1  [["id", "3"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mGenre Load (0.2ms)[0m  [1mSELECT "genres".* FROM "genres" INNER JOIN "classifications" ON "genres"."id" = "classifications"."genre_id" WHERE "classifications"."book_id" = $1[0m  [["book_id", 3]]
+  Rendered books/show.html.slim within layouts/application (11.8ms)
+Completed 200 OK in 52ms (Views: 48.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/books.self-84d33cfdbf11deef24e9ebb4518c93191c77c3e7c8801a53aa7297566709a3e7.css?body=1" for 127.0.0.1 at 2016-01-25 14:11:47 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-25 14:11:47 +0200
+
+
+Started GET "/assets/application.self-293ec305a06d56940ed9fc834e042804e81fd58a0c91192410fe61aba7f8f1a7.css?body=1" for 127.0.0.1 at 2016-01-25 14:11:47 +0200
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-25 14:11:47 +0200
+
+
+Started GET "/assets/application.self-1d5315a652aebafc3812d162e9d63e2b4190e013d21fef2ed0fbc134f939db46.js?body=1" for 127.0.0.1 at 2016-01-25 14:11:47 +0200
+
+
+Started GET "/books/3" for 127.0.0.1 at 2016-01-25 14:12:05 +0200
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBook Load (0.2ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mGenre Load (0.2ms)[0m  SELECT "genres".* FROM "genres" INNER JOIN "classifications" ON "genres"."id" = "classifications"."genre_id" WHERE "classifications"."book_id" = $1  [["book_id", 3]]
+  Rendered books/show.html.slim within layouts/application (3.5ms)
+Completed 200 OK in 73ms (Views: 69.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-25 14:12:05 +0200
+
+
+Started GET "/assets/books.self-84d33cfdbf11deef24e9ebb4518c93191c77c3e7c8801a53aa7297566709a3e7.css?body=1" for 127.0.0.1 at 2016-01-25 14:12:05 +0200
+
+
+Started GET "/assets/application.self-c5b977c7bd1a122e374447ef7dc808772adf8075afe5fb3e17b7eccf47f1a02c.css?body=1" for 127.0.0.1 at 2016-01-25 14:12:05 +0200
+
+
+Started GET "/assets/application.self-1d5315a652aebafc3812d162e9d63e2b4190e013d21fef2ed0fbc134f939db46.js?body=1" for 127.0.0.1 at 2016-01-25 14:12:05 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-25 14:12:05 +0200
+
+
+Started GET "/books/3" for 127.0.0.1 at 2016-01-25 14:16:41 +0200
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT 1  [["id", "3"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mGenre Load (0.2ms)[0m  [1mSELECT "genres".* FROM "genres" INNER JOIN "classifications" ON "genres"."id" = "classifications"."genre_id" WHERE "classifications"."book_id" = $1[0m  [["book_id", 3]]
+  Rendered books/show.html.slim within layouts/application (11.2ms)
+Completed 200 OK in 50ms (Views: 46.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-25 14:16:42 +0200
+
+
+Started GET "/assets/books.self-84d33cfdbf11deef24e9ebb4518c93191c77c3e7c8801a53aa7297566709a3e7.css?body=1" for 127.0.0.1 at 2016-01-25 14:16:42 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-25 14:16:42 +0200
+
+
+Started GET "/assets/application.self-1d5315a652aebafc3812d162e9d63e2b4190e013d21fef2ed0fbc134f939db46.js?body=1" for 127.0.0.1 at 2016-01-25 14:16:42 +0200
+
+
+Started GET "/assets/application.self-c5b977c7bd1a122e374447ef7dc808772adf8075afe5fb3e17b7eccf47f1a02c.css?body=1" for 127.0.0.1 at 2016-01-25 14:16:42 +0200
+  [1m[36mBook Load (0.8ms)[0m  [1mSELECT  "books".* FROM "books"  ORDER BY "books"."id" DESC LIMIT 1[0m
+  [1m[35mBook Load (0.5ms)[0m  SELECT  "books".* FROM "books"  ORDER BY "books"."id" DESC LIMIT 1
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-25 14:52:17 +0200
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.3ms)[0m  SELECT "books".* FROM "books"
+  Rendered books/index.html.slim within layouts/application (7.1ms)
+Completed 200 OK in 43ms (Views: 41.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-25 14:52:31 +0200
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.4ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered books/index.html.slim within layouts/application (9.0ms)
+Completed 200 OK in 47ms (Views: 45.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/books.self-84d33cfdbf11deef24e9ebb4518c93191c77c3e7c8801a53aa7297566709a3e7.css?body=1" for 127.0.0.1 at 2016-01-25 14:52:32 +0200
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-25 14:52:32 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-25 14:52:32 +0200
+
+
+Started GET "/assets/application.self-1d5315a652aebafc3812d162e9d63e2b4190e013d21fef2ed0fbc134f939db46.js?body=1" for 127.0.0.1 at 2016-01-25 14:52:32 +0200
+
+
+Started GET "/assets/application.self-c5b977c7bd1a122e374447ef7dc808772adf8075afe5fb3e17b7eccf47f1a02c.css?body=1" for 127.0.0.1 at 2016-01-25 14:52:32 +0200
+
+
+Started GET "/books/1" for 127.0.0.1 at 2016-01-25 14:52:36 +0200
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mBook Load (0.3ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mGenre Load (0.3ms)[0m  SELECT "genres".* FROM "genres" INNER JOIN "classifications" ON "genres"."id" = "classifications"."genre_id" WHERE "classifications"."book_id" = $1  [["book_id", 1]]
+  Rendered books/show.html.slim within layouts/application (12.1ms)
+Completed 200 OK in 57ms (Views: 53.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/books/1" for 127.0.0.1 at 2016-01-25 14:52:57 +0200
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mGenre Load (0.3ms)[0m  [1mSELECT "genres".* FROM "genres" INNER JOIN "classifications" ON "genres"."id" = "classifications"."genre_id" WHERE "classifications"."book_id" = $1[0m  [["book_id", 1]]
+  Rendered books/show.html.slim within layouts/application (4.0ms)
+Completed 200 OK in 79ms (Views: 76.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/books.self-84d33cfdbf11deef24e9ebb4518c93191c77c3e7c8801a53aa7297566709a3e7.css?body=1" for 127.0.0.1 at 2016-01-25 14:52:57 +0200
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-25 14:52:57 +0200
+
+
+Started GET "/assets/application.self-b5cd03cf2e18160eb352e817b7aa45134bf5a0bb370e36e630e8a053b523e4e1.css?body=1" for 127.0.0.1 at 2016-01-25 14:52:57 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-25 14:52:57 +0200
+
+
+Started GET "/assets/application.self-1d5315a652aebafc3812d162e9d63e2b4190e013d21fef2ed0fbc134f939db46.js?body=1" for 127.0.0.1 at 2016-01-25 14:52:57 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-25 14:53:02 +0200
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.3ms)[0m  SELECT "books".* FROM "books"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered books/index.html.slim within layouts/application (5.7ms)
+Completed 200 OK in 43ms (Views: 42.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/books/3" for 127.0.0.1 at 2016-01-25 14:53:03 +0200
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT 1  [["id", "3"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mGenre Load (0.2ms)[0m  [1mSELECT "genres".* FROM "genres" INNER JOIN "classifications" ON "genres"."id" = "classifications"."genre_id" WHERE "classifications"."book_id" = $1[0m  [["book_id", 3]]
+  Rendered books/show.html.slim within layouts/application (3.2ms)
+Completed 200 OK in 39ms (Views: 37.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/books/3" for 127.0.0.1 at 2016-01-25 14:54:59 +0200
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBook Load (0.2ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT 1[0m  [["id", "3"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mGenre Load (0.2ms)[0m  SELECT "genres".* FROM "genres" INNER JOIN "classifications" ON "genres"."id" = "classifications"."genre_id" WHERE "classifications"."book_id" = $1  [["book_id", 3]]
+  Rendered books/show.html.slim within layouts/application (10.3ms)
+Completed 200 OK in 85ms (Views: 82.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/books.self-84d33cfdbf11deef24e9ebb4518c93191c77c3e7c8801a53aa7297566709a3e7.css?body=1" for 127.0.0.1 at 2016-01-25 14:55:00 +0200
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-25 14:55:00 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-25 14:55:00 +0200
+
+
+Started GET "/assets/application.self-6920c8057cecdcb87ed4c220217024b51fb5dfeb808929d0912d0d912156053d.css?body=1" for 127.0.0.1 at 2016-01-25 14:55:00 +0200
+
+
+Started GET "/assets/application.self-1d5315a652aebafc3812d162e9d63e2b4190e013d21fef2ed0fbc134f939db46.js?body=1" for 127.0.0.1 at 2016-01-25 14:55:00 +0200
+
+
+Started GET "/books/3" for 127.0.0.1 at 2016-01-25 14:55:43 +0200
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT 1  [["id", "3"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mGenre Load (0.2ms)[0m  [1mSELECT "genres".* FROM "genres" INNER JOIN "classifications" ON "genres"."id" = "classifications"."genre_id" WHERE "classifications"."book_id" = $1[0m  [["book_id", 3]]
+  Rendered books/show.html.slim within layouts/application (3.0ms)
+Completed 200 OK in 74ms (Views: 71.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-25 14:55:43 +0200
+
+
+Started GET "/assets/books.self-84d33cfdbf11deef24e9ebb4518c93191c77c3e7c8801a53aa7297566709a3e7.css?body=1" for 127.0.0.1 at 2016-01-25 14:55:43 +0200
+
+
+Started GET "/assets/application.self-b3e7ac3f5951d95362396838e0f576f6b7793710d4b9a593acb4a4479e0d68c2.css?body=1" for 127.0.0.1 at 2016-01-25 14:55:43 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-25 14:55:43 +0200
+
+
+Started GET "/assets/application.self-1d5315a652aebafc3812d162e9d63e2b4190e013d21fef2ed0fbc134f939db46.js?body=1" for 127.0.0.1 at 2016-01-25 14:55:43 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-25 14:55:45 +0200
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.4ms)[0m  SELECT "books".* FROM "books"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered books/index.html.slim within layouts/application (5.3ms)
+Completed 200 OK in 52ms (Views: 50.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/books/3" for 127.0.0.1 at 2016-01-25 14:55:46 +0200
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT 1  [["id", "3"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mGenre Load (0.2ms)[0m  [1mSELECT "genres".* FROM "genres" INNER JOIN "classifications" ON "genres"."id" = "classifications"."genre_id" WHERE "classifications"."book_id" = $1[0m  [["book_id", 3]]
+  Rendered books/show.html.slim within layouts/application (3.6ms)
+Completed 200 OK in 46ms (Views: 43.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-25 14:55:47 +0200
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.4ms)[0m  SELECT "books".* FROM "books"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered books/index.html.slim within layouts/application (7.6ms)
+Completed 200 OK in 47ms (Views: 45.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-25 14:55:49 +0200
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.4ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered books/index.html.slim within layouts/application (5.4ms)
+Completed 200 OK in 38ms (Views: 36.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-25 14:56:05 +0200
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.3ms)[0m  SELECT "books".* FROM "books"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered books/index.html.slim within layouts/application (5.7ms)
+Completed 200 OK in 69ms (Views: 68.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/books.self-84d33cfdbf11deef24e9ebb4518c93191c77c3e7c8801a53aa7297566709a3e7.css?body=1" for 127.0.0.1 at 2016-01-25 14:56:05 +0200
+
+
+Started GET "/assets/application.self-8ab36245527c9892eb6178ccf085b9399a80300f94ad0ac5f91438c411787733.css?body=1" for 127.0.0.1 at 2016-01-25 14:56:05 +0200
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-25 14:56:05 +0200
+
+
+Started GET "/assets/application.self-1d5315a652aebafc3812d162e9d63e2b4190e013d21fef2ed0fbc134f939db46.js?body=1" for 127.0.0.1 at 2016-01-25 14:56:05 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-25 14:56:05 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-25 14:56:10 +0200
+Processing by BooksController#index as HTML
+  [1m[36mBook Load (0.4ms)[0m  [1mSELECT "books".* FROM "books"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered books/index.html.slim within layouts/application (8.2ms)
+Completed 200 OK in 106ms (Views: 104.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-25 14:56:10 +0200
+
+
+Started GET "/assets/application.self-1d5315a652aebafc3812d162e9d63e2b4190e013d21fef2ed0fbc134f939db46.js?body=1" for 127.0.0.1 at 2016-01-25 14:56:10 +0200
+
+
+Started GET "/assets/application.self-b7755b6a4588bd2d6b78ad42672c2dbf66e650ea8f8862397d14249f8bbd239e.css?body=1" for 127.0.0.1 at 2016-01-25 14:56:10 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-25 14:56:10 +0200
+
+
+Started GET "/assets/books.self-84d33cfdbf11deef24e9ebb4518c93191c77c3e7c8801a53aa7297566709a3e7.css?body=1" for 127.0.0.1 at 2016-01-25 14:56:11 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-25 14:56:14 +0200
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.3ms)[0m  SELECT "books".* FROM "books"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered books/index.html.slim within layouts/application (6.8ms)
+Completed 200 OK in 83ms (Views: 81.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/books.self-84d33cfdbf11deef24e9ebb4518c93191c77c3e7c8801a53aa7297566709a3e7.css?body=1" for 127.0.0.1 at 2016-01-25 14:56:14 +0200
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-25 14:56:14 +0200
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2016-01-25 14:56:14 +0200
+
+
+Started GET "/assets/application.self-e3cd46a5e550eb1a695842943ea0d809f3ad8fb20cae8f428077803ac2ae5033.css?body=1" for 127.0.0.1 at 2016-01-25 14:56:14 +0200
+
+
+Started GET "/assets/application.self-1d5315a652aebafc3812d162e9d63e2b4190e013d21fef2ed0fbc134f939db46.js?body=1" for 127.0.0.1 at 2016-01-25 14:56:14 +0200
+
+
+Started GET "/books/3" for 127.0.0.1 at 2016-01-25 14:56:15 +0200
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT 1  [["id", "3"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mGenre Load (0.2ms)[0m  [1mSELECT "genres".* FROM "genres" INNER JOIN "classifications" ON "genres"."id" = "classifications"."genre_id" WHERE "classifications"."book_id" = $1[0m  [["book_id", 3]]
+  Rendered books/show.html.slim within layouts/application (3.4ms)
+Completed 200 OK in 49ms (Views: 47.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-25 14:56:17 +0200
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.3ms)[0m  SELECT "books".* FROM "books"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered books/index.html.slim within layouts/application (5.2ms)
+Completed 200 OK in 46ms (Views: 44.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/books/1" for 127.0.0.1 at 2016-01-25 14:56:18 +0200
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBook Load (0.3ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "books".* FROM "books" WHERE "books"."id" = $1 LIMIT 1  [["id", "1"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mGenre Load (0.3ms)[0m  [1mSELECT "genres".* FROM "genres" INNER JOIN "classifications" ON "genres"."id" = "classifications"."genre_id" WHERE "classifications"."book_id" = $1[0m  [["book_id", 1]]
+  Rendered books/show.html.slim within layouts/application (3.9ms)
+Completed 200 OK in 52ms (Views: 48.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-01-25 14:56:21 +0200
+Processing by BooksController#index as HTML
+  [1m[35mBook Load (0.3ms)[0m  SELECT "books".* FROM "books"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered books/index.html.slim within layouts/application (4.8ms)
+Completed 200 OK in 39ms (Views: 37.9ms | ActiveRecord: 0.7ms)
