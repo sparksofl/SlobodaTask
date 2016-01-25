@@ -1,0 +1,65 @@
+/* line 5, /media/mary/Multi/MyFolder/053747564696573/Ruby/SlobodaTask/app/assets/stylesheets/books.scss */
+.book-container {
+  border: 1px solid #E4E4E4;
+  text-align: center;
+  color: #333;
+}
+
+/* line 11, /media/mary/Multi/MyFolder/053747564696573/Ruby/SlobodaTask/app/assets/stylesheets/books.scss */
+.book-container img {
+  width: 150px;
+  height: 250px;
+}
+
+/* line 16, /media/mary/Multi/MyFolder/053747564696573/Ruby/SlobodaTask/app/assets/stylesheets/books.scss */
+.book-container:hover {
+  background: #e0f2f1;
+}
+
+/* line 20, /media/mary/Multi/MyFolder/053747564696573/Ruby/SlobodaTask/app/assets/stylesheets/books.scss */
+.book-show p {
+  font-weight: 300;
+  margin-top: 100px;
+  max-height: 400px;
+  overflow: auto;
+}
+
+/* line 27, /media/mary/Multi/MyFolder/053747564696573/Ruby/SlobodaTask/app/assets/stylesheets/books.scss */
+.book-show a:hover {
+  background-color: #01579b;
+  color: #fff;
+}
+
+/* line 32, /media/mary/Multi/MyFolder/053747564696573/Ruby/SlobodaTask/app/assets/stylesheets/books.scss */
+#genres_ {
+  display: block;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+ .form-center, .form-center input {
+ 	text-align: center;
+ }
+
+ .flash-notice {
+  font-weight: 100;
+  color: green;
+}
+
+select#book_classification_id {
+	display: inline-block;
+}
