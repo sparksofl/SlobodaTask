@@ -23,9 +23,11 @@ class BooksController < ApplicationController
 
   def create
     @book = Book.new(book_params)
-    params[:genres].each do |g|
-    	@book.genres.push(Genre.find_by_id(g))
-    end
+    if !params[:genres].nil?
+	    params[:genres].each do |g|
+	    	@book.genres.push(Genre.find_by_id(g))
+	    end
+	end
     @book.user_id = session[:user_id]
     # debug
     respond_to do |format|
@@ -41,9 +43,11 @@ class BooksController < ApplicationController
 
   def update
   	@book.genres = Array.new
-  	params[:genres].each do |g|
-    	@book.genres.push(Genre.find_by_id(g))
-    end
+  	if !params[:genres].nil?
+	  	params[:genres].each do |g|
+	    	@book.genres.push(Genre.find_by_id(g))
+	    end
+	end
     respond_to do |format|
       if @book.update(book_params)
         format.html { redirect_to @book, notice: 'Book was successfully updated.' }
